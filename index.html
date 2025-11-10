@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Project — Landing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#hero">IoT Project</a>
+      <nav>
+        <a href="#mission">Миссия</a>
+        <a href="#devices">Устройства</a>
+        <a href="#projects">Проекты</a>
+        <a href="#team">Команда</a>
+        <a class="btn sm" href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Интернет вещей для реальных задач</h1>
+        <p>
+          Мы создаём доступные решения на базе сенсоров, камер и edge‑аналитики.
+          От прототипа до пилота — быстро, прозрачно, масштабируемо.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">Смотреть проекты</a>
+          <a class="btn ghost" href="#contact">Связаться</a>
+        </div>
+      </div>
+      <div class="hero-media card">
+        <img src="https://placehold.co/640x400/png?text=Device+Photo" alt="IoT device demo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="section">
+    <div class="container">
+      <h2 class="section-title">Наша миссия</h2>
+      <p class="muted center max600">
+        Делаем IoT-проекты, которые приносят реальную пользу: телеметрия, видео‑аналитика,
+        контроль качества, автоматизация и безопасность.
+      </p>
+      <div class="cards three">
+        <div class="card">
+          <h3>Edge‑AI</h3>
+          <p>Локальная обработка данных на устройствах: быстрее и приватнее.</p>
+        </div>
+        <div class="card">
+          <h3>Сенсоры</h3>
+          <p>Температура, движение, положение, вибрации — собираем и объединяем.</p>
+        </div>
+        <div class="card">
+          <h3>Облако</h3>
+          <p>Дашборды, алерты, API. Масштабирование без боли.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Devices -->
+  <section id="devices" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Устройства</h2>
+      <div class="cards three">
+        <div class="card card-media">
+          <img src="https://placehold.co/480x300/png?text=Camera+Kit" alt="Camera kit" />
+          <h3>Camera Kit</h3>
+          <p>Комплект с USB‑камерой и Jetson/CPU для видео‑аналитики.</p>
+        </div>
+        <div class="card card-media">
+          <img src="https://placehold.co/480x300/png?text=Sensor+Hub" alt="Sensor hub" />
+          <h3>Sensor Hub</h3>
+          <p>Собирает телеметрию с BLE/LoRa/Wi‑Fi сенсоров, шлёт в облако.</p>
+        </div>
+        <div class="card card-media">
+          <img src="https://placehold.co/480x300/png?text=Edge+Gateway" alt="Edge gateway" />
+          <h3>Edge Gateway</h3>
+          <p>Агрегирует данные, кэширует и управляет обновлениями устройств.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Проекты</h2>
+      <div class="cards two">
+        <div class="card">
+          <h3>Видеоналитика магазина</h3>
+          <p>Подсчёт посетителей, карта внимания, базовая эмо‑аналитика на устройстве.</p>
+          <ul class="bullets">
+            <li>Локально, без отправки видео</li>
+            <li>Отчёты и экспорт данных</li>
+            <li>Установка за 1 день</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Мониторинг склада</h3>
+          <p>Температура, влажность, открытия дверей, вибрации — всё в одном дашборде.</p>
+          <ul class="bullets">
+            <li>LoRa + Wi‑Fi гибрид</li>
+            <li>Алерты в Telegram/Email</li>
+            <li>API для BI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Команда</h2>
+      <div class="team">
+        <div class="member card">
+          <img src="https://placehold.co/160x160/png?text=A" alt="Member A" />
+          <h3>Arslan Shipulin</h3>
+          <p class="muted">Robotics &amp; AI</p>
+        </div>
+        <div class="member card">
+          <img src="https://placehold.co/160x160/png?text=B" alt="Member B" />
+          <h3>Member B</h3>
+          <p class="muted">Hardware</p>
+        </div>
+        <div class="member card">
+          <img src="https://placehold.co/160x160/png?text=C" alt="Member C" />
+          <h3>Member C</h3>
+          <p class="muted">Backend</p>
+        </div>
+        <div class="member card">
+          <img src="https://placehold.co/160x160/png?text=D" alt="Member D" />
+          <h3>Member D</h3>
+          <p class="muted">Frontend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <form class="card form" onsubmit="return false;">
+        <div class="grid">
+          <label>
+            Имя
+            <input type="text" placeholder="Ваше имя" required>
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <label>
+          Сообщение
+          <textarea rows="5" placeholder="Коротко опишите задачу"></textarea>
+        </label>
+        <button class="btn" id="sendBtn">Отправить</button>
+        <p id="formStatus" class="muted small"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 IoT Project. Сделано с ❤️ и Edge‑AI.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
