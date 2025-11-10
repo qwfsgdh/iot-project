@@ -76,6 +76,20 @@ label{display:block;font-size:14px;color:var(--muted);margin:6px 0}
   .form .grid{grid-template-columns:1fr}
   .hero h1{font-size:34px}
 }
+.image-block {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+.image-block img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
 
 .fade{opacity:0;transform:translateY(12px);transition:all .5s ease}
 .in{opacity:1;transform:none}
