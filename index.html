@@ -22,7 +22,7 @@
         <a href="#projects">Workflow</a>
         <a href="#performance">Performance</a>
         <a href="#team">Team</a>
-        <a class="btn sm" href="#contact">Контакты</a>
+        <a class="btn sm" href="#section alt">Impact</a>
       </nav>
     </div>
   </header>
@@ -39,7 +39,7 @@
         </p>
         <div class="hero-cta">
           <a class="btn" href="#projects">Explore Project ↓</a>
-          <a class="btn ghost" href="#contact">Связаться</a>
+          <a class="btn ghost" href="#section alt">Impact</a>
         </div>
       </div>
 
@@ -179,6 +179,91 @@
   </section>
 
 
+<section id="specs" class="section alt">
+  <div class="container">
+    <h2 class="section-title">Detailed Technical Specifications</h2>
+    <p class="muted center max600">
+      Complete hardware and software specifications of the smart-shoe navigation system
+    </p>
+
+    <div class="cards three">
+
+      <div class="card">
+        <h3>Processing Unit</h3>
+        <ul class="bullets">
+          <li>ESP32-WROVER-B Module</li>
+          <li>Dual-core Xtensa LX6 @ 240MHz</li>
+          <li>520KB SRAM, 4MB Flash</li>
+          <li>Wi-Fi 802.11 b/g/n (2.4GHz)</li>
+          <li>Bluetooth 5.0 + BLE</li>
+          <li>Real-Time OS (FreeRTOS)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Sensor Array</h3>
+        <ul class="bullets">
+          <li>HC-SR04 Ultrasonic Sensor (40kHz)</li>
+          <li>TFmini Plus LiDAR</li>
+          <li>GPS NEO-6M (±5m accuracy)</li>
+          <li>IMU & 3-Axis Accelerometer</li>
+          <li>Detection Range: 15–150cm</li>
+          <li>120° Horizontal Field of View</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Feedback Systems</h3>
+        <ul class="bullets">
+          <li>Piezo Buzzer (80Hz–16kHz)</li>
+          <li>3× Directional Vibration Motors</li>
+          <li>Optional Speaker Output</li>
+          <li>Adaptive Intensity Control</li>
+          <li>Multi-Pattern Alert Modes</li>
+          <li>Response Latency: &lt;100ms</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Power Management</h3>
+        <ul class="bullets">
+          <li>3000mAh Li-Po Battery</li>
+          <li>8+ Hours Operation</li>
+          <li>Fast Charging (≈2 hours)</li>
+          <li>Dynamic Power Optimization</li>
+          <li>Low Battery Warning System</li>
+          <li>Efficiency: &gt;99%</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Physical Specifications</h3>
+        <ul class="bullets">
+          <li>Weight: &lt;200g per shoe</li>
+          <li>Water Resistance: IP54</li>
+          <li>Operating Temp: −10°C to +50°C</li>
+          <li>Ergonomic In-Shoe Form Factor</li>
+          <li>Durable ABS Housing</li>
+          <li>Modular Replaceable Parts</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Software Features</h3>
+        <ul class="bullets">
+          <li>Real-Time Obstacle Classification</li>
+          <li>Edge-AI Processing</li>
+          <li>Adaptive Filtering Algorithms</li>
+          <li>GPS Data Logging</li>
+          <li>Emergency Alert Broadcasting</li>
+          <li>OTA Firmware Updates</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- TECHNICAL SPEC GRAPHIC -->
   <section class="section">
@@ -260,28 +345,63 @@
     </div>
   </section>
 
+  
+<section id="team-responsibilities" class="section alt">
+  <div class="container">
+    <h2 class="section-title">Team Responsibilities</h2>
+    <p class="muted center max600">
+      Clear distribution of responsibilities to ensure efficient development and high-quality results
+    </p>
 
+    <div class="cards three" style="margin-top:40px;">
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">Контакты</h2>
+      <!-- Arslan -->
+      <div class="card">
+        <h3>Arslan Shipulin</h3>
+        <p class="muted small" style="margin-top:-6px;">UX Lead • System Designer • Testing Lead</p>
+        <ul class="bullets">
+          <li>Design of system architecture & workflow</li>
+          <li>Creation of diagrams, visuals and project website</li>
+          <li>UX evaluation and user interaction mapping</li>
+          <li>Testing and validation of hardware & firmware</li>
+          <li>Documentation and structure of project materials</li>
+          <li>Performance analysis & reporting</li>
+        </ul>
+      </div>
 
-      <form class="card form" onsubmit="return false;">
-        <div class="grid">
-          <label>Имя <input type="text" placeholder="Ваше имя" required></label>
-          <label>Email <input type="email" placeholder="you@example.com" required></label>
-        </div>
+      <!-- Mahmudkhon -->
+      <div class="card">
+        <h3>Mahmudkhon Usmonov</h3>
+        <p class="muted small" style="margin-top:-6px;">Embedded & Software Engineer</p>
+        <ul class="bullets">
+          <li>Firmware development for ESP32 (C/C++)</li>
+          <li>Sensor data acquisition & filtering</li>
+          <li>Real-time obstacle classification algorithms</li>
+          <li>GPS, LiDAR & ultrasonic module integration</li>
+          <li>Emergency alert communication</li>
+          <li>OTA updates & system optimization</li>
+        </ul>
+      </div>
 
-        <label>Сообщение
-          <textarea rows="5" placeholder="Коротко опишите задачу"></textarea>
-        </label>
+      <!-- Fyodor -->
+      <div class="card">
+        <h3>Fyodor Amanov</h3>
+        <p class="muted small" style="margin-top:-6px;">Hardware Engineer</p>
+        <ul class="bullets">
+          <li>Sensor array integration (LiDAR, ultrasonic, GPS)</li>
+          <li>Power system design & battery management</li>
+          <li>PCB wiring, hardware assembly & enclosure work</li>
+          <li>Physical testing of durability & stability</li>
+          <li>Component selection & optimization</li>
+          <li>Hardware debugging & signal validation</li>
+        </ul>
+      </div>
 
-        <button class="btn" id="sendBtn">Отправить</button>
-        <p id="formStatus" class="muted small"></p>
-      </form>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
 
 
