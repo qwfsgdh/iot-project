@@ -3,459 +3,322 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IoT Project — Landing</title>
+  <title>IoT Smart Shoes — Assistive Navigation System</title>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="#hero">IoT Project</a>
       <nav>
-        <a href="#mission">Problem/solution</a>
+        <a href="#mission">Problem/Solution</a>
         <a href="#devices">System</a>
         <a href="#projects">Workflow</a>
+        <a href="#performance">Performance</a>
         <a href="#team">Team</a>
         <a class="btn sm" href="#contact">Контакты</a>
       </nav>
     </div>
   </header>
 
- <!-- Hero -->
-<section id="hero" class="hero section">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>Smart Shoes for Blind People</h1>
-      <p>
-        An intelligent IoT-based assistive navigation system that empowers independence and confidence for visually impaired individuals
+
+  <!-- HERO -->
+  <section id="hero" class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Smart Shoes for Blind People</h1>
+        <p>
+          An intelligent IoT-based assistive navigation system that empowers independence
+          and confidence for visually impaired individuals.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">Explore Project ↓</a>
+          <a class="btn ghost" href="#contact">Связаться</a>
+        </div>
+      </div>
+
+      <div class="hero-media card">
+        <img src="pictures/main-picture.png" alt="Smart Shoe Device" />
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PROBLEM / SOLUTION -->
+  <section id="mission" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Why This Project Matters</h2>
+      <p class="muted center max600">
+        Understanding the real-world challenges and the innovation behind our assistive navigation system
       </p>
-      <div class="hero-cta">
-        <a class="btn" href="#projects">Explore Project ↓</a>
-        <a class="btn ghost" href="#contact">Связаться</a>
+
+      <div class="cards two">
+        <div class="card">
+          <h3>The Problem</h3>
+          <p>
+            Navigation tools for visually impaired people are often bulky, uncomfortable, and draw unwanted attention.
+            Traditional white canes cannot detect elevated obstacles, and many assistive devices feel stigmatizing.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Our Solution</h3>
+          <p>
+            A discreet, ergonomic system integrated directly into footwear.
+            Smart shoes scan the environment, detect obstacles, and notify users through intuitive haptic feedback —
+            all without drawing attention.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="hero-media card">
-      <img src="pictures/main-picture.png" alt="Smart Shoe Device" />
-    </div>
-  </div>
-</section>
+  </section>
 
 
-  <!-- Mission -->
-<section id="mission" class="section alt">
-  <div class="container">
-    <h2 class="section-title">Why This Project Matters</h2>
-    <p class="muted center max600">
-      Understanding the real-world challenges and the innovation behind our assistive navigation system
-    </p>
 
-    <div class="cards two">
-
-      <div class="card">
-        <h3>The Problem</h3>
-        <p>
-          Many navigation tools for visually impaired individuals are bulky,
-          uncomfortable, or attract unnecessary attention. Traditional white canes
-          cannot detect obstacles above ground level, and many assistive devices
-          feel heavy, inconvenient, or stigmatizing.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Our Solution</h3>
-        <p>
-          A discreet, ergonomic system seamlessly integrated into everyday footwear.
-          Smart shoes detect obstacles naturally and silently, using advanced sensors
-          and haptic feedback — empowering users while preserving comfort,
-          confidence, and personal style.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- Devices -->
+  <!-- SYSTEM -->
   <section id="devices" class="section alt">
     <div class="container">
       <h2 class="section-title">How the System Works</h2>
+
       <div class="cards three">
+
         <div class="card card-media">
-          <img src="pictures/lidar.png" alt="lidar" />
+          <img src="pictures/lidar.png" alt="Lidar sensor" />
           <h3>Obstacle Detection</h3>
-          <p>Ultrasonic sensors and LIDAR technology continuously scan the path ahead, detecting obstacles from 15cm to 150cm away with 95% accuracy. The system identifies objects at various heights, from ground-level hazards to head-level obstacles.</p>
+          <p>Ultrasonic and LIDAR sensors continuously scan 15–150 cm in front of the user, detecting ground and upper-level obstacles.</p>
         </div>
+
         <div class="card card-media">
-          <img src="pictures/esp32.png" alt="esp32" />
+          <img src="pictures/esp32.png" alt="ESP32" />
           <h3>Adaptive Signal System</h3>
-          <p>The ESP32 microcontroller processes sensor data in real-time and generates adaptive feedback signals. As obstacles get closer, vibration intensity increases proportionally, providing intuitive distance awareness without visual confirmation.</p>
+          <p>ESP32 processes sensor data in real-time, adjusting vibration feedback intensity as obstacles get closer.</p>
         </div>
+
         <div class="card card-media">
-          <img src="pictures/gps.png" alt="gps" />
+          <img src="pictures/gps.png" alt="GPS module" />
           <h3>GPS Emergency Tracking</h3>
-          <p>Integrated GPS NEO-6M module provides precise location tracking with ±5 meter accuracy. In case of emergency, the system can transmit the user's exact location to designated contacts or emergency services via WiFi or Bluetooth connectivity.</p>
+          <p>GPS NEO-6M enables emergency location broadcasting with ±5m accuracy and optional WiFi/Bluetooth transmission.</p>
         </div>
+
       </div>
     </div>
   </section>
 
 
-<section class="section alt">
-  <div class="container">
-    <h2 class="section-title">Impact and Future Development</h2>
-    <p class="muted center max600">
-      Our vision for the future of assistive navigation technology
-    </p>
 
-    <div class="cards two">
+  <!-- IMPACT & FUTURE -->
+  <section class="section alt">
+    <div class="container">
+      <h2 class="section-title">Impact and Future Development</h2>
+      <p class="muted center max600">Our vision for the future of assistive navigation technology</p>
 
-      <div class="card">
-        <h3>Validated Effectiveness</h3>
-        <p>
-          Field testing demonstrates 95%+ obstacle detection accuracy across indoor and outdoor environments.
-          System reliability proven through hundreds of hours of real-world navigation.
-        </p>
+      <div class="cards two">
+
+        <div class="card">
+          <h3>Validated Effectiveness</h3>
+          <p>95%+ detection accuracy validated through extensive indoor/outdoor testing.</p>
+        </div>
+
+        <div class="card">
+          <h3>User-Centered Design</h3>
+          <p>Developed with continuous feedback from visually impaired individuals.</p>
+        </div>
+
+        <div class="card">
+          <h3>Open Source Contribution</h3>
+          <p>Hardware, firmware, and documentation will be available on GitHub.</p>
+        </div>
+
+        <div class="card">
+          <h3>Future Enhancements</h3>
+          <p>ML classification, smarter route planning, and enhanced wireless connectivity.</p>
+        </div>
+
       </div>
-
-      <div class="card">
-        <h3>User-Centered Design</h3>
-        <p>
-          Developed with continuous feedback from visually impaired individuals.  
-          Prioritizes comfort, discretion, and intuitive use.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Open Source Contribution</h3>
-        <p>
-          Hardware schematics, firmware, and documentation will be available on GitHub, enabling researchers and developers to extend the project.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Future Enhancements</h3>
-        <p>
-          Roadmap includes ML-based obstacle classification, improved path planning,
-          smart-city integration, and enhanced wireless communication.
-        </p>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Projects -->
+
+
+  <!-- WORKFLOW -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Technical Approach and System Workflow</h2>
+      <h2 class="section-title">Technical Workflow</h2>
+
       <div class="cards two">
+
         <div class="card">
           <h3>Environmental Sensing</h3>
-          <p>Ultrasonic HC-SR04 (40kHz) and LIDAR TFmini Plus sensors continuously scan a 120-degree field of view ahead, capturing real-time distance data at millisecond intervals.</p>
-
-          </ul>
+          <p>HC-SR04 and TFmini Plus LiDAR scan a 120° field-of-view with millisecond updates.</p>
         </div>
+
         <div class="card">
           <h3>Data Processing</h3>
-          <p>ESP32-WROVER-B dual-core processor (240MHz) analyzes sensor streams using adaptive algorithms, filtering noise and classifying obstacles by distance and urgency.</p>
-          </ul>
+          <p>ESP32 analyzes incoming sensor streams and filters noise before classification.</p>
         </div>
+
         <div class="card">
           <h3>Location Tracking</h3>
-          <p>GPS NEO-6M module maintains continuous position awareness, logging coordinates and enabling emergency location broadcasting via wireless connectivity.</p>
-      </div>
-      <div class="card">
+          <p>GPS NEO-6M maintains continuous positioning and supports emergency alerts.</p>
+        </div>
+
+        <div class="card">
           <h3>Feedback Generation</h3>
-          <p>Multi-modal alert system delivers context-aware feedback through vibration motors, piezo buzzer, and optional speaker, adapting to environmental conditions and user preferences.</p>
+          <p>Vibration motors + buzzer output layered notifications depending on urgency.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
 
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Detailed Technical Specifications</h2>
-    <p class="muted center max600">Full hardware and software parameters</p>
 
-    <div class="cards three">
+  <!-- TECHNICAL SPEC GRAPHIC -->
+  <section class="section">
+    <div class="container center">
+      <h2 class="section-title">System Architecture</h2>
+      <p class="muted max600 center">
+        High-level visualization of how sensors, processing, and feedback modules interact
+      </p>
 
-      <div class="card">
-        <h3>Processing Unit</h3>
-        <ul class="bullets">
-          <li>ESP32-WROVER-B Module</li>
-          <li>Dual-core Xtensa LX6 @ 240 MHz</li>
-          <li>520KB SRAM / 4MB Flash</li>
-          <li>Wi-Fi 2.4GHz (802.11 b/g/n)</li>
-          <li>Bluetooth 5.0 + BLE</li>
-          <li>FreeRTOS Real-Time OS</li>
-        </ul>
+      <div class="image-block">
+        <img src="pictures/sensor.png" alt="sensor diagram">
       </div>
-
-      <div class="card">
-        <h3>Sensor Array</h3>
-        <ul class="bullets">
-          <li>HC-SR04 Ultrasonic Sensor</li>
-          <li>TFmini Plus LiDAR</li>
-          <li>GPS NEO-6M (±5m accuracy)</li>
-          <li>IMU & 3-Axis Accelerometer</li>
-          <li>Detection Range: 15–150 cm</li>
-          <li>120° Field of View</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Feedback Systems</h3>
-        <ul class="bullets">
-          <li>Piezo Buzzer (80 Hz – 16 kHz)</li>
-          <li>3× Directional Vibration Motors</li>
-          <li>Optional Speaker Output</li>
-          <li>Adaptive Intensity Control</li>
-          <li>Response Latency: &lt;100 ms</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Power Management</h3>
-        <ul class="bullets">
-          <li>3000mAh Li-Po Battery</li>
-          <li>Operating Time: 8+ hours</li>
-          <li>Fast Charging (2 hours)</li>
-          <li>Dynamic Power Optimization</li>
-          <li>Low Battery Warning System</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Physical Specifications</h3>
-        <ul class="bullets">
-          <li>Weight: &lt;200g per shoe</li>
-          <li>IP54 Water Resistance</li>
-          <li>Operating Temp −10°C to +50°C</li>
-          <li>Durable ABS Housing</li>
-          <li>Modular Replaceable Components</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Software Features</h3>
-        <ul class="bullets">
-          <li>Real-Time Obstacle Classification</li>
-          <li>Edge AI Algorithms</li>
-          <li>Adaptive Signal Processing</li>
-          <li>GPS Data Logging</li>
-          <li>Emergency Alert Broadcast</li>
-          <li>OTA Firmware Updates</li>
-        </ul>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section alt">
-  <div class="container">
-    <h2 class="section-title">Project Development Timeline</h2>
-    <p class="muted center max600">Step-by-step development roadmap</p>
 
-    <div class="cards two">
 
-      <div class="card">
-        <h3>Phase 1: Hardware Setup</h3>
-        <p>
-          Integrate ESP32 with sensors (ultrasonic, LiDAR, GPS), feedback systems,
-          and power module. Assemble the first working prototype.
-        </p>
+  <!-- PERFORMANCE -->
+  <section class="section alt" id="performance">
+    <div class="container">
+
+      <h2 class="section-title center">Performance Metrics</h2>
+      <p class="muted center max600">Real-world validated system performance</p>
+
+      <div class="performance-grid">
+
+        <div class="perf-card"><h3>95%+</h3><p>Detection Accuracy</p></div>
+        <div class="perf-card"><h3>150cm</h3><p>Max Range</p></div>
+        <div class="perf-card"><h3>&lt;100ms</h3><p>Response Time</p></div>
+        <div class="perf-card"><h3>8+hrs</h3><p>Battery Life</p></div>
+        <div class="perf-card"><h3>±5m</h3><p>GPS Accuracy</p></div>
+        <div class="perf-card"><h3>&lt;200g</h3><p>System Weight</p></div>
+
       </div>
 
-      <div class="card">
-        <h3>Phase 2: System Programming</h3>
-        <p>
-          Develop real-time firmware for data acquisition, obstacle detection,
-          adaptive algorithms, and emergency alert communication.
+      <div class="performance-image-block">
+        <img src="pictures/performance-diagram.png" alt="Performance Diagram">
+        <p class="muted small center">
+          Wearable assistive navigation system with advanced sensor integration.
         </p>
       </div>
-
-      <div class="card">
-        <h3>Phase 3: Testing & Validation</h3>
-        <p>
-          Conduct real-world testing to verify obstacle detection accuracy,
-          vibration response quality, and GPS reliability in multiple environments.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Phase 4: Deployment & Refinement</h3>
-        <p>
-          Integrate final components into sleek form factor, perform user trials
-          with visually impaired individuals, collect feedback, and optimize usability.
-        </p>
-      </div>
-
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container center">
-    <h2 class="section-title">Technical Approach and System Workflow</h2>
-    <p class="muted max600 center">
-      High-level visualization of how sensors, processing, and feedback modules interact within the smart-shoe navigation system
-    </p>
-
-    <div class="image-block">
-      <img src="pictures/sensor.png" alt="sensor">
-    </div>
-  </div>
-</section>
+  </section>
 
 
-  <!-- Team -->
+
+  <!-- TEAM -->
   <section id="team" class="section alt">
     <div class="container">
       <h2 class="section-title">Team</h2>
+
       <div class="team">
+
         <div class="member card">
-          <img src="pictures/Student Man.png" alt="Member A" />
+          <img src="pictures/Student Man.png" alt="Arslan">
           <h3>Arslan Shipulin</h3>
           <p class="muted">Software Developer</p>
         </div>
+
         <div class="member card">
-          <img src="pictures/Student Man.png" alt="Member B" />
+          <img src="pictures/Student Man.png" alt="Mahmudkhon">
           <h3>Mahmudkhon Usmonov</h3>
           <p class="muted">Project Lead</p>
         </div>
+
         <div class="member card">
-          <img src="pictures/Student Man.png" alt="Member C" />
+          <img src="pictures/Student Man.png" alt="Fyodor">
           <h3>Fyodor Amanov</h3>
           <p class="muted">Hardware Engineer</p>
         </div>
+
         <div class="member card">
-          <img src="pictures/Student Man.png" alt="Member D" />
+          <img src="pictures/Student Man.png" alt="Zubair">
           <h3>Muhammad Zubair Islam</h3>
-          <p class="muted">Research Supervision</p>
+          <p class="muted">Research Supervisor</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+
+
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
       <h2 class="section-title">Контакты</h2>
+
       <form class="card form" onsubmit="return false;">
         <div class="grid">
-          <label>
-            Имя
-            <input type="text" placeholder="Ваше имя" required>
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="you@example.com" required>
-          </label>
+          <label>Имя <input type="text" placeholder="Ваше имя" required></label>
+          <label>Email <input type="email" placeholder="you@example.com" required></label>
         </div>
-        <label>
-          Сообщение
+
+        <label>Сообщение
           <textarea rows="5" placeholder="Коротко опишите задачу"></textarea>
         </label>
+
         <button class="btn" id="sendBtn">Отправить</button>
         <p id="formStatus" class="muted small"></p>
       </form>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>2025 IoT Project. Shipulin Arslan 25040200.</p>
+
+
+  <!-- ADVANCED FOOTER -->
+  <footer class="footer-advanced">
+
+    <div class="container footer-grid">
+
+      <div class="footer-column">
+        <h4>Project Navigation</h4>
+        <a href="#hero">Overview</a>
+        <a href="#mission">Problem & Solution</a>
+        <a href="#devices">Technology</a>
+        <a href="#performance">Performance</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Institution</h4>
+        <a href="https://en.sejong.ac.kr/eng/index.do" target="_blank">Sejong University</a>
+        <a href="https://en.sejong.ac.kr/eng/academics/Electronics_and_Information_Engineering.do" target="_blank">Department of CS</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <a href="https://github.com/qwfsgdh/iot-project" target="_blank">GitHub Repository</a>
+        <a href="https://www.mdpi.com/2076-3417/7/10/986" target="_blank">Technical Docs</a>
+        <a href="https://www.techscience.com/cmc/v76n1/53058" target="_blank">Research Papers</a>
+      </div>
+
     </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 IoT Project — Designed by Shipulin Arslan</p>
+    </div>
+
   </footer>
 
-  <footer class="footer-advanced">
-  <div class="container footer-grid">
-
-    <div class="footer-column">
-      <h4>Project Navigation</h4>
-      <a href="#hero">Overview</a>
-      <a href="#mission">Problem & Solution</a>
-      <a href="#devices">Technology</a>
-      <a href="#section alt">Timeline</a>
-      <a href="#section">Specifications</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Institution</h4>
-      <a href="#https://en.sejong.ac.kr/eng/index.do">Sejong University</a>
-      <a href="#https://en.sejong.ac.kr/eng/academics/Electronics_and_Information_Engineering.do">Department of Computer Science</a>
-      <a href="#https://en.sejong.ac.kr/eng/academics/Electronics_and_Information_Engineering.do">IoT & Embedded Systems</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Resources</h4>
-      <a href="https://github.com/qwfsgdh/iot-project" target="_blank">GitHub Repository</a>
-      <a href="#https://www.mdpi.com/2076-3417/7/10/986">Technical Documentation</a>
-      <a href="#https://www.techscience.com/cmc/v76n1/53058">Research Publications</a>
-      <a href="#site-header">Project Presentation</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 IoT Project — Designed by Shipulin Arslan</p>
-  </div>
-</footer>
-<section class="section alt" id="performance">
-  <div class="container">
-
-    <h2 class="section-title center">Performance Metrics</h2>
-    <p class="muted center max600">
-      Real-world validated results demonstrating system effectiveness
-    </p>
-
-    <div class="performance-grid">
-
-      <div class="perf-card">
-        <h3>95%+</h3>
-        <p>Detection Accuracy</p>
-      </div>
-
-      <div class="perf-card">
-        <h3>150cm</h3>
-        <p>Maximum Range</p>
-      </div>
-
-      <div class="perf-card">
-        <h3>&lt;100ms</h3>
-        <p>Response Time</p>
-      </div>
-
-      <div class="perf-card">
-        <h3>8+hrs</h3>
-        <p>Battery Life</p>
-      </div>
-
-      <div class="perf-card">
-        <h3>±5m</h3>
-        <p>GPS Accuracy</p>
-      </div>
-
-      <div class="perf-card">
-        <h3>&lt;200g</h3>
-        <p>System Weight</p>
-      </div>
-
-    </div>
-
-    <div class="performance-image-block">
-      <img src="pictures/performance-diagram.png" alt="Performance Diagram">
-      <p class="muted small center">
-        Wearable assistive technology integration: Modern approaches to navigation assistance using advanced sensors and processing unitsg
-      </p>
-    </div>
-
-  </div>
-</section>
 
   <script src="script.js"></script>
 </body>
